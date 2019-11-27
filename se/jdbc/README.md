@@ -21,6 +21,7 @@ Java数据库连接（Java Database Connectivity）
 * 数据库连接接口
 * 通过`Connection#createSatement()`获取SQL执行器
 * 通过`Connection#prepareStatement(String)`获取SQL预执行器
+* 通过`Connection#.prepareStatement(String, int)`获取主键ResultSet
 * 通过`Connection#getMetaData()`获取DatabaseMetaData数据库元信息
 * 注：
     1. 执行器**直接替换SQL关键字**，不能有效预防SQL注入

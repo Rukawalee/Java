@@ -9,6 +9,11 @@ import java.util.List;
 import java.util.ArrayList;
 import org.apache.commons.beanutils.BeanUtils;
 
+/**
+ * 1. import commons-beanutils-1.9.4.jar
+ * 2. import commons-logging-1.2.jar
+ * 3. import commons-collections-3.2.2.jar
+ **/
 public class DaoBeanUtils {
 	public void update(String sql, Object... args) {
 		Connection conn = null;

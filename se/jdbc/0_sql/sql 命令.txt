@@ -10,6 +10,7 @@ CREATE TABLE tb_customers (
 );
 
 ALTER TABLE tb_customers CHANGE id id INT AUTO_INCREMENT;
+ALTER TABLE tb_customers ADD picture MEDIUMBLOB;
 
 INSERT INTO tb_customers (name, email, birth) VALUES ('zhangSan', 'zhangSan@rukawalee.com', '1990-11-11');
 INSERT INTO tb_customers (name, email, birth) VALUES ('liSi', 'liSi@rukawalee.com', '1990-11-12');
@@ -18,3 +19,16 @@ INSERT INTO tb_customers (name, email, birth) VALUES ('wangWu', 'wangWu@rukawale
 DESC tb_customers;
 
 SELECT * FROM tb_customers;
+
+CREATE TABLE tb_users (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50),
+	balance DOUBLE
+);
+
+INSERT INTO tb_users (name, balance) VALUES ('zhangSan', 1000);
+INSERT INTO tb_users (name, balance) VALUES ('liSi', 1000);
+
+DESC tb_users;
+
+SELECT * FROM tb_users;

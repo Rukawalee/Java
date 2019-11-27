@@ -4,7 +4,7 @@ public class DaoBeanUtilsTest {
 	DaoBeanUtils dbu = new DaoBeanUtils();
 	
 	public void testUpdate() {
-		
+		dbu.update("UPDATE tb_customers SET name = ? WHERE id = ?", 1, 2);
 	}
 
 	public void testQueryOne() {
@@ -22,6 +22,7 @@ public class DaoBeanUtilsTest {
 		DaoBeanUtilsTest dbut = new DaoBeanUtilsTest();
 		dbut.testQueryOne();
 		System.out.println("-----split-----");
+		dbut.testUpdate();
 		dbut.testQueryList();
 	}
 }
