@@ -9,7 +9,7 @@
 	1. [配置Java环境变量](https://github.com/Rukawalee/ConfigurationTools/tree/master/java)
 * Jdbc程序
 	1. [配置MySQL环境变量](https://github.com/Rukawalee/ConfigurationTools/tree/master/mysql)
-	2. 下载整个[jdbc](../jdbc)尝试
+	2. 下载整个[jdbc](../se/jdbc)尝试
 
 ### 使用方法
 1. 直接拖入Java源程序文件
